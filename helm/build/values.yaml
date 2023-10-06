@@ -1,0 +1,15 @@
+app:
+  name: joshix-poi-backend-app
+  namespace: joshix
+  cluster: .apps.rosa-x4jc7.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-gh/joshix-backend
+  org: rhdh-gh
+  name: joshix-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: joshix/poi-backend-app
+  tag: latest
